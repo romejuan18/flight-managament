@@ -1,0 +1,36 @@
+{
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "cypress-mochawesome-reporter,mocha-junit-reporter",
+    "mochaJunitReporterReporterOptions": {
+      "mochaFile": "junit_report/final_results_junit-[hash].xml",
+      "toConsole": false
+    },
+    "cypressMochawesomeReporterReporterOptions": {
+      "charts": true,
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "quiet": true
+    }
+  },
+  "watchForFileChanges": true,
+  "viewportWidth": 1366,
+  "viewportHeight": 768,
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  },
+  "chromeWebSecurity": false,
+  "video": false,
+  "requestTimeout": 30000,
+  "experimentalStudio": true,
+
+  "env": {
+    "browserPermissions": {
+      "notifications": "allow",
+      "geolocation": "allow",
+      "cookies": "allow"
+    }
+  }
+}
