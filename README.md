@@ -34,7 +34,7 @@ npm run open
 
 For a complete list of scripts see [package.json](./package.json)
 
-##Execution examples
+## Execution examples
 
 1. To run in open mode, just run
 
